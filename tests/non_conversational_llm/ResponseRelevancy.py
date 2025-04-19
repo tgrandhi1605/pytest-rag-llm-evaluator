@@ -18,9 +18,9 @@ from utils.TestDataUtils import load_data_sets
 @pytest.mark.asyncio
 async def test_response_relevancy(llm_wrapper, generate_data_feed):
     response_relevancy = AnswerRelevancy(llm=llm_wrapper())
-    score = await response_relevancy.single_turn_ascore(generate_data_feed)
-    print("Response Relevancy Score: ", score)
-    assert score >= 0.95
+    response_relevancy_score = await response_relevancy.single_turn_ascore(generate_data_feed)
+    print("Response Relevancy Score: ", response_relevancy_score)
+    assert response_relevancy_score >= 0.95
 
 
 @pytest.fixture

@@ -7,13 +7,13 @@ from utils.LLMUtils import get_response_from_llm
 
 @pytest.mark.asyncio
 async def test_rubrics_score(llm_wrapper, generate_data_feed):
-
+    # source: https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/general_purpose/#rubrics-based-criteria-scoring
     rubrics = {
-        "score_1_description": "The response is completely irrelevant to the question.",
-        "score_2_description": "The response is somewhat relevant but lacks depth.",
-        "score_3_description": "The response is relevant and provides some depth.",
-        "score_4_description": "The response is relevant and provides good depth.",
-        "score_5_description": "The response is highly relevant and provides excellent depth.",
+        "score1_description": "The response is entirely incorrect and fails to address any aspect of the reference.",
+        "score2_description": "The response contains partial accuracy but includes major errors or significant omissions that affect its relevance to the reference.",
+        "score3_description": "The response is mostly accurate but lacks clarity, thoroughness, or minor details needed to fully address the reference.",
+        "score4_description": "The response is accurate and clear, with only minor omissions or slight inaccuracies in addressing the reference.",
+        "score5_description": "The response is completely accurate, clear, and thoroughly addresses the reference without any errors or omissions."
     }
 
     # Initialize the RubricScore metric
@@ -23,6 +23,7 @@ async def test_rubrics_score(llm_wrapper, generate_data_feed):
     score = await rubrics_score.single_turn_ascore(generate_data_feed)
     print("Rubric Score: ", score)
     assert score > 0.7
+
 
 @pytest.fixture
 def generate_data_feed(request):

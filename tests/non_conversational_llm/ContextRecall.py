@@ -22,9 +22,9 @@ async def test_context_recall(llm_wrapper, generate_data_feed):
     # Initialize the LLMContextRecall metric
     context_recall = LLMContextRecall(llm=llm_wrapper)
     # Metric to calculate the context recall score
-    score = await context_recall.single_turn_ascore(generate_data_feed)
-    print("Context Recall Score: ", score)
-    assert score >= 0.95
+    context_recall_score = await context_recall.single_turn_ascore(generate_data_feed)
+    print("Context Recall Score: ", context_recall_score)
+    assert context_recall_score >= 0.95
 
 
 @pytest.fixture

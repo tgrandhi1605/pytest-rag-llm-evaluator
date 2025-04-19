@@ -16,9 +16,9 @@ from utils.TestDataUtils import load_data_sets
 @pytest.mark.asyncio
 async def test_factual_correctness(llm_wrapper, generate_data_feed):
     factual_correctness = FactualCorrectness(llm=llm_wrapper)
-    score = await factual_correctness.single_turn_ascore(generate_data_feed)
-    print("Factual Correctness Score: ", score)
-    assert score >= 0.95
+    factual_correctness_score = await factual_correctness.single_turn_ascore(generate_data_feed)
+    print("Factual Correctness Score: ", factual_correctness_score)
+    assert factual_correctness_score >= 0.95
 
 
 @pytest.fixture

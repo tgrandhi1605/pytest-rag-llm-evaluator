@@ -4,7 +4,7 @@ This repository provides a Pytest-based framework designed to evaluate Retrieval
 
 ## 💡Overview
 
-This framework enables end-to-end evaluation of RAG pipelines, covering:
+This framework enables end-to-end evaluation of [RAG](https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/) pipelines, covering:
 * 	Retrieval Modules
 * 	Augmentation Modules
 * 	Generation Modules
@@ -12,20 +12,20 @@ This framework enables end-to-end evaluation of RAG pipelines, covering:
 It integrates with the RAGAS library, OpenAI, and Langchain to deliver actionable insights on LLM performance.
 
 ## ⚙️ Tech stack
-1. Python
-2. Pytest
-3. RAGAS Library
-4. OpenAI API
-5. Langchain
+1. [Python](https://www.python.org/downloads/)
+2. [Pytest](https://docs.pytest.org/en/stable/)
+3. [RAGAS](https://docs.ragas.io/) Library
+4. [OpenAI API](https://platform.openai.com/)
+5. [Langchain](https://python.langchain.com/docs/introduction/)
 
 ## 📊 Evaluation Metrics
-1. ✅ Context Precision
-2. ✅ Context Recall
-3. ✅ Faithfulness
-4. ✅ Factual Correctness
-5. ✅ Response Relevancy
-6. ✅ Topic Adherence
-7. ✅ Rubrics Score
+1. ✅ [Context Precision](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/context_precision/)
+2. ✅ [Context Recall](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/context_recall/)
+3. ✅ [Faithfulness](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/faithfulness/)
+4. ✅ [Factual Correctness](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/factual_correctness/)
+5. ✅ [Response Relevancy](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/answer_relevance/)
+6. ✅ [Topic Adherence](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/agents/#topic_adherence)
+7. ✅ [Rubrics Score](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/general_purpose/#rubrics-based-scoring)
 
 ## 🔍 Features
 

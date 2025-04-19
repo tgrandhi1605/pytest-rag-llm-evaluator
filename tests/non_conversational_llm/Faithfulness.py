@@ -17,9 +17,9 @@ from utils.TestDataUtils import load_data_sets
 @pytest.mark.asyncio
 async def test_faithfulness(llm_wrapper, generate_data_feed):
     faithfulness = Faithfulness(llm=llm_wrapper)
-    score = await faithfulness.single_turn_ascore(generate_data_feed)
-    print("Faithfulness Score: ", score)
-    assert score >= 0.95
+    faithfulness_score = await faithfulness.single_turn_ascore(generate_data_feed)
+    print("Faithfulness Score: ", faithfulness_score)
+    assert faithfulness_score >= 0.95
 
 
 @pytest.fixture

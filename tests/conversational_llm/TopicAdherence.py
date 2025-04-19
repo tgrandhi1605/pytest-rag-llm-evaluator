@@ -1,10 +1,7 @@
 import pytest
-from ragas import SingleTurnSample, MultiTurnSample
+from ragas import MultiTurnSample
 from ragas.messages import HumanMessage, AIMessage
-from ragas.metrics import FactualCorrectness, TopicAdherenceScore
-
-from utils.LLMUtils import get_response_from_llm
-from utils.TestDataUtils import load_data_sets
+from ragas.metrics import TopicAdherenceScore
 
 
 # Terminology:
@@ -14,9 +11,9 @@ from utils.TestDataUtils import load_data_sets
 @pytest.mark.asyncio
 async def test_topic_adherence(llm_wrapper, generate_data_feed):
     factual_correctness = TopicAdherenceScore(llm=llm_wrapper)
-    score = await factual_correctness.multi_turn_ascore(generate_data_feed)
-    print("Factual Correctness Score: ", score)
-    assert score >= 0.8
+    topic_adherence_score = await factual_correctness.multi_turn_ascore(generate_data_feed)
+    print("Factual Correctness Score: ", topic_adherence_score)
+    assert topic_adherence_score >= 0.8
 
 
 @pytest.fixture

@@ -22,9 +22,9 @@ async def test_context_precision(llm_wrapper, generate_data_feed):
     context_precision_without_reference = LLMContextPrecisionWithoutReference(llm=llm_wrapper)
 
     # Fetch the score
-    contextPrecisionScore = await context_precision_without_reference.single_turn_ascore(generate_data_feed)
-    print("Context Precision Score: ", contextPrecisionScore)
-    assert contextPrecisionScore >= 0.95
+    context_precision_score = await context_precision_without_reference.single_turn_ascore(generate_data_feed)
+    print("Context Precision Score: ", context_precision_score)
+    assert context_precision_score >= 0.95
 
 
 @pytest.fixture

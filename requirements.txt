@@ -4,4 +4,4 @@ langchain~=0.3.23
 nltk~=3.9.1
 langchain-community~=0.3.21
 langchain-openai~=0.3.14
-python>=3.12
+python>=3.9

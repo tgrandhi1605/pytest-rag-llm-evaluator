@@ -70,7 +70,7 @@ def generate_data_feed(request):
 
     singleTurnSampleData = SingleTurnSample(
         user_input=test_data["question"],
-        reference=test_data["reference"],
+        reference=test_data["reference"], # Ground truth or actual answer for a given question or user input
         retrieved_contexts=retrieved_contexts,
         response=responseFromRAGLLM["answer"],
     )

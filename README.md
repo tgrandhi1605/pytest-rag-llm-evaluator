@@ -21,11 +21,18 @@ It integrates with the RAGAS library, OpenAI, and Langchain to deliver actionabl
 ## 📊 Evaluation Metrics
 1. ✅ [Context Precision](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/context_precision/)
 2. ✅ [Context Recall](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/context_recall/)
-3. ✅ [Faithfulness](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/faithfulness/)
-4. ✅ [Factual Correctness](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/factual_correctness/)
-5. ✅ [Response Relevancy](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/answer_relevance/)
-6. ✅ [Topic Adherence](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/agents/#topic_adherence)
-7. ✅ [Rubrics Score](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/general_purpose/#rubrics-based-scoring)
+3. ✅ [Context Entity Recall](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/context_entities_recall/#context-entities-recall)
+4. ✅ [Faithfulness](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/faithfulness/)
+5. ✅ [Factual Correctness](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/factual_correctness/)
+6. ✅ [Response Relevancy](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/answer_relevance/)
+7. ✅ [Topic Adherence](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/agents/#topic_adherence)
+8. ✅ [Rubrics Score](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/general_purpose/#rubrics-based-scoring)
+9. ✅ [Noise Sensitivity](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/noise_sensitivity/)
+10. ✅ [Answer Accuracy](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/nvidia_metrics/#answer-accuracy)
+11. ✅ [Context Relevance](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/nvidia_metrics/#context-relevance)
+12. ✅ [Semantic Similarity](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/semantic_similarity/)
+13. ✅ [Response Groundedness](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/nvidia_metrics/#response-groundedness)
+14. ✅ [Context Relevance](https://docs.ragas.io/en/latest/concepts/metrics/available_metrics/nvidia_metrics/#context-relevance)
 
 ## 🔍 Features
 

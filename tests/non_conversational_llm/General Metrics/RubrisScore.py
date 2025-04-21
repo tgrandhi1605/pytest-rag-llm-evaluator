@@ -35,6 +35,6 @@ def generate_data_feed(request):
     singleTurnSampleData = SingleTurnSample(
         user_input="Where is Eiffel tower located?",
         response="Eiffel Tower is located in France.",
-        reference="Eiffel Tower is located in Paris, France.",
+        reference="Eiffel Tower is located in Paris, France.", # Ground truth or actual answer for a given question or user input
     )
     return singleTurnSampleData

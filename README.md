@@ -61,9 +61,9 @@ All tests are designed with pytest standards, making it easy to extend, automate
 pytest-rag-llm-evaluator/
 ├── tests/                # Pytest test cases
 ├── data/                 # Synthetic & real datasets
-├── metrics/              # Metric definitions and assertions
+├── utils/                # Utility functions for data generation and processing
 ├── configs/              # Config files for different LLM setups
 ├── README.md             # Project documentation
-└── requirements.txt      # Dependencies`
+└── requirements.txt      # Dependencies
 ````
 

@@ -2,7 +2,7 @@ import pytest
 from ragas import SingleTurnSample
 from ragas.metrics import AnswerRelevancy
 
-from conftest import llm_wrapper
+from configs.conftest import llm_wrapper
 from utils.LLMUtils import get_response_from_llm
 from utils.TestDataUtils import load_data_sets
 

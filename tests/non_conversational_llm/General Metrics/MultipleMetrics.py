@@ -3,7 +3,7 @@ from ragas import SingleTurnSample, EvaluationDataset, evaluate
 from ragas.metrics import FactualCorrectness, ResponseRelevancy, LLMContextPrecisionWithoutReference, \
     LLMContextRecall, Faithfulness
 
-from conftest import llm_wrapper
+from configs.conftest import llm_wrapper
 from utils.LLMUtils import get_response_from_llm
 from utils.TestDataUtils import load_data_sets
 

@@ -1,4 +1,4 @@
-# pytest-rag-llm-evaluator
+# pytest-ragas-llm-evaluator
 
 This repository provides a Pytest-based framework designed to evaluate Retrieval-Augmented Generation (RAG) based Large Language Models (LLMs). This tool helps developers and researchers validate the performance, accuracy, and reliability of custom LLM architectures using structured tests and industry-standard metrics.
 
